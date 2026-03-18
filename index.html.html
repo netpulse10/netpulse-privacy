@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetPulse — Privacy Policy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #040810;
+    color: #e8f4ff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    padding: 0 0 60px;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #080f1e, #0c1628);
+    border-bottom: 1px solid #1a2d50;
+    padding: 32px 24px 28px;
+    text-align: center;
+  }
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .app-name {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    background: linear-gradient(135deg, #00eeff, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .tagline {
+    font-size: 13px;
+    color: #4a6080;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+  }
+
+  .page-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #00e5ff;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #1a2d50;
+  }
+
+  .last-updated {
+    font-size: 11px;
+    color: #4a6080;
+    margin-top: 6px;
+    font-family: monospace;
+    letter-spacing: 0.05em;
+  }
+
+  /* Content */
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+
+  .intro-box {
+    background: linear-gradient(135deg, rgba(0,229,255,0.06), rgba(0,255,136,0.04));
+    border: 1px solid rgba(0,229,255,0.2);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  .intro-box .check-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .intro-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(232,244,255,0.85);
+  }
+
+  .intro-box strong {
+    color: #00e5ff;
+  }
+
+  /* Sections */
+  .section {
+    margin-bottom: 36px;
+  }
+
+  .section-label {
+    font-size: 10px;
+    font-family: monospace;
+    letter-spacing: 0.2em;
+    color: #00e5ff;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0,229,255,0.15);
+  }
+
+  .section h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #e8f4ff;
+    margin-bottom: 12px;
+  }
+
+  .section p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(232,244,255,0.7);
+    margin-bottom: 10px;
+  }
+
+  /* Check list */
+  .check-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .check-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: rgba(232,244,255,0.75);
+    line-height: 1.5;
+  }
+
+  .check-list li::before {
+    content: '✓';
+    color: #00ff88;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* Info cards */
+  .info-card {
+    background: #0c1628;
+    border: 1px solid #1a2d50;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .info-card-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .info-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #e8f4ff;
+    margin-bottom: 4px;
+    letter-spacing: 0.03em;
+  }
+
+  .info-card-desc {
+    font-size: 12px;
+    color: #4a6080;
+    line-height: 1.6;
+    font-family: monospace;
+  }
+
+  /* Contact */
+  .contact-card {
+    background: linear-gradient(135deg, rgba(0,229,255,0.05), rgba(0,255,136,0.03));
+    border: 1px solid rgba(0,229,255,0.2);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .contact-card p {
+    font-size: 13px;
+    color: #4a6080;
+    margin-bottom: 12px;
+  }
+
+  .contact-email {
+    font-size: 15px;
+    color: #00e5ff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    padding: 10px 24px;
+    border: 1px solid rgba(0,229,255,0.3);
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  .contact-email:hover {
+    background: rgba(0,229,255,0.08);
+    border-color: rgba(0,229,255,0.5);
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 30px 24px 0;
+    border-top: 1px solid #1a2d50;
+    margin-top: 48px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    color: #4a6080;
+    font-family: monospace;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
+
+  .footer .copy {
+    color: rgba(0,229,255,0.4);
+    font-size: 11px;
+    margin-top: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .container { padding: 28px 16px; }
+    .header { padding: 24px 16px 22px; }
+    .app-name { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="logo-wrap">
+    <svg width="42" height="42" viewBox="0 0 34 34" fill="none">
+      <defs>
+        <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00eeff"/>
+          <stop offset="100%" stop-color="#00ff88"/>
+        </linearGradient>
+      </defs>
+      <circle cx="17" cy="17" r="15.5" fill="none" stroke="url(#lg1)" stroke-width="1.5" opacity="0.6" stroke-dasharray="6 3"/>
+      <circle cx="17" cy="17" r="11" fill="none" stroke="url(#lg1)" stroke-width="1.5" opacity="0.8"/>
+      <circle cx="17" cy="17" r="2.8" fill="url(#lg1)"/>
+      <polyline points="4,17 8,17 10,11 12,23 14,14 16,20 17,17 18,17 20,13 22,21 24,17 30,17"
+        fill="none" stroke="url(#lg1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="app-name">NETPULSE</div>
+  </div>
+  <div class="tagline">Clear the path to faster internet</div>
+  <div class="page-title">Privacy Policy</div>
+  <div class="last-updated">Last updated: March 2026</div>
+</div>
+
+<!-- Content -->
+<div class="container">
+
+  <!-- Intro box -->
+  <div class="intro-box">
+    <div class="check-icon">🔒</div>
+    <p>
+      <strong>We don't collect any personal data.</strong><br>
+      Feel free and safe to use NetPulse. Your personal information stays on your device — always. The app may show ads to support free access.
+    </p>
+  </div>
+
+  <!-- What we don't collect -->
+  <div class="section">
+    <div class="section-label">01 — Data Collection</div>
+    <h2>What We Don't Collect</h2>
+    <p>NetPulse is built on a simple principle: your data belongs to you. We collect absolutely nothing.</p>
+    <ul class="check-list">
+      <li>No personal information (name, email, phone number)</li>
+      <li>No location data is stored or transmitted</li>
+      <li>No usage analytics or behavior tracking</li>
+      <li>No network data sent to external servers</li>
+      <li>No third-party advertising or analytics SDKs</li>
+      <li>No account registration required</li>
+      <li>No cookies or cross-app tracking</li>
+    </ul>
+  </div>
+
+  <!-- What we do -->
+  <div class="section">
+    <div class="section-label">02 — How The App Works</div>
+    <h2>What NetPulse Does</h2>
+
+    <div class="info-card">
+      <div class="info-card-icon">📡</div>
+      <div>
+        <div class="info-card-title">Network Reading</div>
+        <div class="info-card-desc">NetPulse reads your WiFi name, signal strength, and speed purely to display it on your screen. This data is never stored or transmitted anywhere.</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="info-card-icon">📍</div>
+      <div>
+        <div class="info-card-title">Location Permission</div>
+        <div class="info-card-desc">Android requires location permission to read your WiFi network name (SSID). We use this solely to display your network name — nothing else. No location coordinates are ever accessed or stored.</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="info-card-icon">⚙️</div>
+      <div>
+        <div class="info-card-title">Settings Storage</div>
+        <div class="info-card-desc">Your app preferences (toggles, DNS selection) are saved locally on your device using standard Android storage. This data never leaves your device.</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="info-card-icon">🛡️</div>
+      <div>
+        <div class="info-card-title">DNS Optimization</div>
+        <div class="info-card-desc">When you switch DNS to Cloudflare (1.1.1.1) or another provider, your DNS queries go directly to that provider — not through us. We have no visibility into your DNS activity.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Permissions -->
+  <div class="section">
+    <div class="section-label">03 — App Permissions</div>
+    <h2>Why We Need Permissions</h2>
+    <p>NetPulse requests only the permissions strictly necessary for its features:</p>
+    <ul class="check-list">
+      <li><strong style="color:#e8f4ff">INTERNET</strong> — to measure ping latency to DNS servers</li>
+      <li><strong style="color:#e8f4ff">ACCESS_WIFI_STATE</strong> — to read WiFi signal strength and connection info</li>
+      <li><strong style="color:#e8f4ff">ACCESS_FINE_LOCATION</strong> — required by Android to read WiFi network name only</li>
+      <li><strong style="color:#e8f4ff">ACCESS_NETWORK_STATE</strong> — to detect connection type (WiFi / Mobile Data)</li>
+      <li><strong style="color:#e8f4ff">KILL_BACKGROUND_PROCESSES</strong> — to throttle background apps during boost</li>
+      <li><strong style="color:#e8f4ff">WAKE_LOCK</strong> — to keep optimization running while screen is on</li>
+    </ul>
+  </div>
+
+  <!-- Third parties -->
+  <div class="section">
+    <div class="section-label">04 — Third Parties</div>
+    <h2>Third-Party Services</h2>
+    <p>NetPulse may display advertisements to support free access to the app. Ad networks may collect certain non-personal, anonymized data (such as device type or general location) for ad targeting purposes. We do not share your personal data with advertisers.</p>
+    <p style="margin-top:10px">The app also makes the following network requests:</p>
+    <ul class="check-list">
+      <li>Ping requests to <strong style="color:#e8f4ff">1.1.1.1</strong> (Cloudflare) to measure latency — no personal data attached</li>
+      <li>Google Fonts loaded from fonts.googleapis.com for the app interface typography</li>
+      <li>Ad network requests (if ads are shown) — governed by the respective ad network's privacy policy</li>
+    </ul>
+    <p style="margin-top:12px">We do not sell your personal data to any third party.</p>
+  </div>
+
+  <!-- Children -->
+  <div class="section">
+    <div class="section-label">05 — Children's Privacy</div>
+    <h2>Children's Privacy</h2>
+    <p>NetPulse does not collect any personal information from anyone, including children under 13. The app is safe for users of all ages.</p>
+  </div>
+
+  <!-- Changes -->
+  <div class="section">
+    <div class="section-label">06 — Changes</div>
+    <h2>Changes to This Policy</h2>
+    <p>If we ever update this privacy policy, the new version will be posted here with an updated date. We will never introduce data collection without being transparent about it.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="section">
+    <div class="section-label">07 — Contact</div>
+    <h2>Get in Touch</h2>
+    <div class="contact-card">
+      <p>Questions, concerns, or just want to say hello? We'd love to hear from you.</p>
+      <a href="/cdn-cgi/l/email-protection#bed0dbcacecbd2cddb8f8efed9d3dfd7d290ddd1d3" class="contact-email"><span class="__cf_email__" data-cfemail="8ae4effefaffe6f9efbbbacaede7ebe3e6a4e9e5e7">[email&#160;protected]</span></a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>
+      NetPulse — Network Optimizer<br>
+      Version 1.0.0 &nbsp;·
